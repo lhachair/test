@@ -33,6 +33,12 @@ static void pingSample(afb_req_t request)
 	pingcount++;
 }
 
+static void helloworld(afb_req_t request)
+{
+	AFB_req_DEBUG(request, "hello world");
+    afb_req_reply(request, NULL, NULL, "hello world");
+}
+
 // testArgsSample - return success only if argument is set to {"cezam": "open"}
 static void testArgsSample(afb_req_t request)
 {
@@ -160,6 +166,8 @@ static const struct afb_auth _afb_auths_v2_monitor[] = {
 static const afb_verb_t verbs[] = {
 	/*Without security*/
 	{.verb = "ping", .session = AFB_SESSION_NONE, .callback = pingSample, .auth = NULL},
+
+	{.verb = "hello", .session = AFB_SESSION_NONE, .callback = helloworld, .auth = NULL},
 
 	/*With security "urn:AGL:permission:monitor:public:get"*/
 	/*{ .verb = "ping"     , .session = AFB_SESSION_NONE, .callback = pingSample  , .auth = &_afb_auths_v2_monitor[1]},*/
