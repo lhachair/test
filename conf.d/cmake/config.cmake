@@ -21,7 +21,7 @@
 set(PROJECT_NAME helloworld-binding)
 set(PROJECT_PRETTY_NAME "Helloworld Binding")
 set(PROJECT_DESCRIPTION "Provide an Helloworld Binding")
-set(PROJECT_URL "https://github.com/redpesk-samples/helloworld-binding")
+set(PROJECT_URL "https://github.com/lhachair/test.git")
 set(PROJECT_ICON "icon.png")
 set(PROJECT_AUTHOR "Iot-Team")
 set(PROJECT_AUTHOR_MAIL "frederic.marec@iot.bzh")

@@ -45,9 +45,10 @@ BuildRequires: pkgconfig(afb-binding)
 BuildRequires: pkgconfig(afb-libhelpers)
 
 %description
-The helloworld agl service gathers two bindings.
+The helloworld agl service gathers three bindings.
 - helloworld-skeleton: Increment a counter
 - helloworld-subscribe-event: Subscribe and get notified whether an event is emited
+- helloworld-new : A new one
 
 # main package: default install in /var/local/lib/afm/applications/%%{name}
 %afm_package
